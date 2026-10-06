@@ -1,0 +1,26 @@
+:root { --bg: #0f140d; --panel: #172014; --line: #2c3a26; --text: #e8f5e0; --muted: #9db594; --green: #8fe36a; --gold: #ffd23f; --red: #ff5a5a; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.45 "Segoe UI", system-ui, sans-serif; }
+h1 { font-size: 22px; margin: 0; }
+h2 { font-size: 16px; margin: 0 0 10px; color: var(--green); text-transform: uppercase; letter-spacing: .04em; }
+.top { display: flex; align-items: center; gap: 14px; padding: 14px 20px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 16px; padding: 16px 20px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin: 6px 0; }
+button { background: #26351f; color: var(--text); border: 1px solid #3e5233; border-radius: 8px; padding: 7px 12px; font: inherit; cursor: pointer; }
+button:hover { border-color: var(--green); }
+button.on { background: var(--green); color: #0b1408; font-weight: 700; }
+button.danger { background: #4a1414; border-color: var(--red); color: #ffd9d9; font-weight: 700; }
+button.big { padding: 12px 18px; font-size: 16px; }
+input, select { background: #0c110a; color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; font: inherit; }
+input[type=number] { width: 84px; }
+label { color: var(--muted); }
+.pill { padding: 3px 10px; border-radius: 99px; font-size: 13px; font-weight: 700; }
+.ok { background: #1f4a17; color: #c9f7b3; } .warn { background: #4a3c12; color: #ffe9a8; } .bad { background: #4a1414; color: #ffd0d0; }
+.muted { color: var(--muted); }
+.mono { font-family: ui-monospace, Consolas, monospace; font-size: 13px; word-break: break-all; }
+table { border-collapse: collapse; width: 100%; } td, th { padding: 4px 6px; border-bottom: 1px solid var(--line); text-align: left; } th { color: var(--muted); font-weight: 600; }
+.clock { font-size: 34px; font-weight: 800; }
+.banner { background: #3a2f0c; color: var(--gold); padding: 8px 20px; font-weight: 700; }
+iframe { width: 100%; aspect-ratio: 16/9; border: 1px solid var(--line); border-radius: 10px; background: #000; }
+button:disabled { opacity: .45; cursor: default; }
