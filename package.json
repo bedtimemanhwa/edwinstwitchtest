@@ -11,7 +11,7 @@
     "dev": "node scripts/dev.mjs",
     "build": "vite build && tsc -p tsconfig.server.json",
     "start": "node --no-warnings=ExperimentalWarning dist/server/server/main.js",
-    "demo": "npm run build && node --no-warnings=ExperimentalWarning dist/server/server/main.js --open-demo",
+    "demo": "npm run build && node --no-warnings=ExperimentalWarning dist/server/server/main.js",
     "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.server.json --noEmit",
     "test": "vitest run",
     "test:smoke": "node --no-warnings=ExperimentalWarning scripts/smoke.mjs",

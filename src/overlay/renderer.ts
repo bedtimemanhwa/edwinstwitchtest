@@ -300,7 +300,7 @@ export class Renderer {
       case "community-smash": title = "COMMUNITY SMASH!"; sub = "Chat filled the smash meter"; break;
     }
     const c = this.ctx;
-    const w = live ? 720 : 1160, h = live ? 150 : 190;
+    const w = live ? 720 : mode === "BRB" ? 820 : 1160, h = live ? 150 : 190;
     const x = live ? W - w - 30 : (W - w) / 2;
     // Placed so it never covers a scene's title or countdown.
     const y0 = live ? 540 : mode === "BRB" ? 190 : 560;

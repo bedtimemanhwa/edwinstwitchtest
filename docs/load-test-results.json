@@ -1,0 +1,637 @@
+{
+  "report": {
+    "rate": 100,
+    "seconds": 60,
+    "commandsSent": 6000,
+    "overlayFps": {
+      "min": 46,
+      "median": 57.1,
+      "p95": 60,
+      "max": 60
+    },
+    "worstFrameMs": {
+      "min": 16.8,
+      "median": 33.4,
+      "p95": 33.5,
+      "max": 116.6
+    },
+    "controlLatencyMs": {
+      "min": 1.9,
+      "median": 2.3,
+      "p95": 3.8,
+      "max": 4.8
+    },
+    "stateLatencyMs": {
+      "min": 1,
+      "median": 1.6,
+      "p95": 3.7,
+      "max": 4.6
+    },
+    "maxEffectsInSnapshot": 8,
+    "emergencyStopMs": 2.8,
+    "effectsAfterStop": 0,
+    "note": "Headless Chromium with software rendering on a 4-core cloud container; OBS with GPU compositing will differ."
+  },
+  "samples": [
+    {
+      "t": 1,
+      "fps": 60.00393468424159,
+      "worstFrameMs": 33.39999999999999,
+      "controlMs": 4.216188999999758,
+      "stateMs": 3.6140129999998862,
+      "effects": 1,
+      "flex": 0,
+      "smash": 0
+    },
+    {
+      "t": 2,
+      "fps": 56.069250442651985,
+      "worstFrameMs": 33.30000000000018,
+      "controlMs": 3.3668270000007396,
+      "stateMs": 2.612178999999742,
+      "effects": 7,
+      "flex": 0,
+      "smash": 0
+    },
+    {
+      "t": 3,
+      "fps": 57.05292150304938,
+      "worstFrameMs": 33.399999999999636,
+      "controlMs": 3.742330000000038,
+      "stateMs": 2.127744999999777,
+      "effects": 1,
+      "flex": 0,
+      "smash": 0
+    },
+    {
+      "t": 4,
+      "fps": 60,
+      "worstFrameMs": 16.799999999999272,
+      "controlMs": 3.1635630000000674,
+      "stateMs": 3.733455999999933,
+      "effects": 7,
+      "flex": 5,
+      "smash": 5
+    },
+    {
+      "t": 5,
+      "fps": 57.05292150304936,
+      "worstFrameMs": 33.400000000000546,
+      "controlMs": 2.4067199999999502,
+      "stateMs": 1.3166550000005373,
+      "effects": 1,
+      "flex": 5,
+      "smash": 5
+    },
+    {
+      "t": 6,
+      "fps": 49.35643085260814,
+      "worstFrameMs": 33.400000000000546,
+      "controlMs": 1.922432999999728,
+      "stateMs": 1.0417499999985012,
+      "effects": 6,
+      "flex": 5,
+      "smash": 5
+    },
+    {
+      "t": 7,
+      "fps": 58.03659256344676,
+      "worstFrameMs": 33.29999999999927,
+      "controlMs": 3.015129999999772,
+      "stateMs": 1.5884540000006382,
+      "effects": 1,
+      "flex": 5,
+      "smash": 5
+    },
+    {
+      "t": 8,
+      "fps": 56,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 2.0919170000015583,
+      "stateMs": 2.1602939999993396,
+      "effects": 7,
+      "flex": 10,
+      "smash": 10
+    },
+    {
+      "t": 9,
+      "fps": 56.069250442652056,
+      "worstFrameMs": 33.29999999999927,
+      "controlMs": 2.087115000000267,
+      "stateMs": 1.7484679999997752,
+      "effects": 1,
+      "flex": 10,
+      "smash": 10
+    },
+    {
+      "t": 10,
+      "fps": 56,
+      "worstFrameMs": 33.399999999999636,
+      "controlMs": 2.3484239999997953,
+      "stateMs": 1.3006009999990056,
+      "effects": 7,
+      "flex": 10,
+      "smash": 10
+    },
+    {
+      "t": 11,
+      "fps": 60.00393468424157,
+      "worstFrameMs": 33.29999999999927,
+      "controlMs": 2.2452159999993455,
+      "stateMs": 1.7942459999994753,
+      "effects": 1,
+      "flex": 10,
+      "smash": 10
+    },
+    {
+      "t": 12,
+      "fps": 59.020263623844166,
+      "worstFrameMs": 16.80000000000109,
+      "controlMs": 2.5861129999993864,
+      "stateMs": 1.1607029999995575,
+      "effects": 7,
+      "flex": 15,
+      "smash": 15
+    },
+    {
+      "t": 13,
+      "fps": 58.03659256344676,
+      "worstFrameMs": 33.399999999999636,
+      "controlMs": 2.903754000000845,
+      "stateMs": 2.0184640000006766,
+      "effects": 1,
+      "flex": 15,
+      "smash": 15
+    },
+    {
+      "t": 14,
+      "fps": 46,
+      "worstFrameMs": 33.399999999999636,
+      "controlMs": 2.226333999999042,
+      "stateMs": 1.4002899999977672,
+      "effects": 7,
+      "flex": 15,
+      "smash": 15
+    },
+    {
+      "t": 15,
+      "fps": 49.356430852608185,
+      "worstFrameMs": 33.5,
+      "controlMs": 2.654142999999749,
+      "stateMs": 1.3552750000017113,
+      "effects": 1,
+      "flex": 15,
+      "smash": 15
+    },
+    {
+      "t": 16,
+      "fps": 48.99999999999991,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 2.124773000003188,
+      "stateMs": 1.0968520000024,
+      "effects": 7,
+      "flex": 15,
+      "smash": 15
+    },
+    {
+      "t": 17,
+      "fps": 60.00393468424168,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 2.442472999999154,
+      "stateMs": 1.0466770000020915,
+      "effects": 1,
+      "flex": 20,
+      "smash": 20
+    },
+    {
+      "t": 18,
+      "fps": 53.118237261459846,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 4.798896000000241,
+      "stateMs": 2.7372379999978875,
+      "effects": 7,
+      "flex": 20,
+      "smash": 20
+    },
+    {
+      "t": 19,
+      "fps": 57.052921503049255,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 2.2987929999981134,
+      "stateMs": 1.2903509999996459,
+      "effects": 1,
+      "flex": 20,
+      "smash": 20
+    },
+    {
+      "t": 20,
+      "fps": 53,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 2.13724799999909,
+      "stateMs": 1.8231350000023667,
+      "effects": 7,
+      "flex": 25,
+      "smash": 25
+    },
+    {
+      "t": 21,
+      "fps": 57.05292150304946,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 2.4808389999998326,
+      "stateMs": 2.1408970000011323,
+      "effects": 1,
+      "flex": 25,
+      "smash": 25
+    },
+    {
+      "t": 22,
+      "fps": 55,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 2.1820859999970708,
+      "stateMs": 1.445424000001367,
+      "effects": 7,
+      "flex": 25,
+      "smash": 25
+    },
+    {
+      "t": 23,
+      "fps": 58.03659256344666,
+      "worstFrameMs": 33.29999999999927,
+      "controlMs": 2.1428669999986596,
+      "stateMs": 1.1826099999998405,
+      "effects": 1,
+      "flex": 25,
+      "smash": 25
+    },
+    {
+      "t": 24,
+      "fps": 58.03659256344687,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 2.3151619999989634,
+      "stateMs": 1.7779550000013842,
+      "effects": 7,
+      "flex": 30,
+      "smash": 30
+    },
+    {
+      "t": 25,
+      "fps": 58,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 2.0352339999990363,
+      "stateMs": 1.1472130000001926,
+      "effects": 1,
+      "flex": 30,
+      "smash": 30
+    },
+    {
+      "t": 26,
+      "fps": 58.03659256344687,
+      "worstFrameMs": 16.799999999999272,
+      "controlMs": 2.004130000001169,
+      "stateMs": 1.1456020000005083,
+      "effects": 7,
+      "flex": 30,
+      "smash": 30
+    },
+    {
+      "t": 27,
+      "fps": 60,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 2.444083000002138,
+      "stateMs": 1.2154669999981706,
+      "effects": 1,
+      "flex": 30,
+      "smash": 30
+    },
+    {
+      "t": 28,
+      "fps": 57.05853418593212,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 1.9352379999982077,
+      "stateMs": 2.0701670000016748,
+      "effects": 7,
+      "flex": 30,
+      "smash": 30
+    },
+    {
+      "t": 29,
+      "fps": 56,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 2.375958000000537,
+      "stateMs": 1.4083539999992354,
+      "effects": 1,
+      "flex": 35,
+      "smash": 35
+    },
+    {
+      "t": 30,
+      "fps": 57,
+      "worstFrameMs": 83.29999999999927,
+      "controlMs": 2.2918310000022757,
+      "stateMs": 1.2488849999936065,
+      "effects": 7,
+      "flex": 35,
+      "smash": 35
+    },
+    {
+      "t": 31,
+      "fps": 49,
+      "worstFrameMs": 33.30000000000291,
+      "controlMs": 2.276207999995677,
+      "stateMs": 1.2447050000046147,
+      "effects": 1,
+      "flex": 35,
+      "smash": 35
+    },
+    {
+      "t": 32,
+      "fps": 55.08557938225465,
+      "worstFrameMs": 33.30000000000291,
+      "controlMs": 2.4115119999987655,
+      "stateMs": 1.5537709999989602,
+      "effects": 7,
+      "flex": 35,
+      "smash": 35
+    },
+    {
+      "t": 33,
+      "fps": 57.052921503049056,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 2.101966000001994,
+      "stateMs": 1.2275640000007115,
+      "effects": 1,
+      "flex": 40,
+      "smash": 40
+    },
+    {
+      "t": 34,
+      "fps": 56,
+      "worstFrameMs": 33.299999999995634,
+      "controlMs": 1.8754589999953168,
+      "stateMs": 3.9071620000031544,
+      "effects": 6,
+      "flex": 40,
+      "smash": 40
+    },
+    {
+      "t": 35,
+      "fps": 58.03659256344687,
+      "worstFrameMs": 33.299999999995634,
+      "controlMs": 3.8150359999999637,
+      "stateMs": 1.4010469999993802,
+      "effects": 1,
+      "flex": 40,
+      "smash": 40
+    },
+    {
+      "t": 36,
+      "fps": 58.03659256344687,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 2.0709589999969467,
+      "stateMs": 1.1572010000018054,
+      "effects": 7,
+      "flex": 45,
+      "smash": 45
+    },
+    {
+      "t": 37,
+      "fps": 60,
+      "worstFrameMs": 33.30000000000291,
+      "controlMs": 2.497426000001724,
+      "stateMs": 1.8903950000021723,
+      "effects": 1,
+      "flex": 45,
+      "smash": 45
+    },
+    {
+      "t": 38,
+      "fps": 57.09861608438966,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 2.7115300000004936,
+      "stateMs": 1.7823270000008051,
+      "effects": 6,
+      "flex": 45,
+      "smash": 45
+    },
+    {
+      "t": 39,
+      "fps": 57,
+      "worstFrameMs": 16.80000000000291,
+      "controlMs": 2.5743339999971795,
+      "stateMs": 2.04453199999989,
+      "effects": 1,
+      "flex": 45,
+      "smash": 45
+    },
+    {
+      "t": 40,
+      "fps": 60.00393468424168,
+      "worstFrameMs": 33.30000000000291,
+      "controlMs": 2.6353200000012293,
+      "stateMs": 1.6679100000037579,
+      "effects": 8,
+      "flex": 50,
+      "smash": 50
+    },
+    {
+      "t": 41,
+      "fps": 55.08557938225465,
+      "worstFrameMs": 33.30000000000291,
+      "controlMs": 2.4123120000003837,
+      "stateMs": 1.5820779999994556,
+      "effects": 1,
+      "flex": 50,
+      "smash": 50
+    },
+    {
+      "t": 42,
+      "fps": 57.05292150304946,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 2.11557499999617,
+      "stateMs": 1.1777680000013788,
+      "effects": 7,
+      "flex": 50,
+      "smash": 50
+    },
+    {
+      "t": 43,
+      "fps": 57,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 2.246839999999793,
+      "stateMs": 1.8965539999990142,
+      "effects": 1,
+      "flex": 55,
+      "smash": 55
+    },
+    {
+      "t": 44,
+      "fps": 55,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 2.7792610000033164,
+      "stateMs": 4.64670599999954,
+      "effects": 7,
+      "flex": 55,
+      "smash": 55
+    },
+    {
+      "t": 45,
+      "fps": 54.10723069355632,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 3.403878999997687,
+      "stateMs": 2.1724380000014207,
+      "effects": 1,
+      "flex": 55,
+      "smash": 55
+    },
+    {
+      "t": 46,
+      "fps": 53.994600539946084,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 1.8530509999982314,
+      "stateMs": 3.534574999997858,
+      "effects": 7,
+      "flex": 55,
+      "smash": 55
+    },
+    {
+      "t": 47,
+      "fps": 54.10723069355632,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 2.085337000004074,
+      "stateMs": 3.332652999997663,
+      "effects": 1,
+      "flex": 60,
+      "smash": 60
+    },
+    {
+      "t": 48,
+      "fps": 55,
+      "worstFrameMs": 33.5,
+      "controlMs": 1.9562060000025667,
+      "stateMs": 1.6670549999980722,
+      "effects": 7,
+      "flex": 60,
+      "smash": 60
+    },
+    {
+      "t": 49,
+      "fps": 52,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 2.6286219999965397,
+      "stateMs": 1.1399959999980638,
+      "effects": 1,
+      "flex": 60,
+      "smash": 60
+    },
+    {
+      "t": 50,
+      "fps": 58.036592563446455,
+      "worstFrameMs": 16.80000000000291,
+      "controlMs": 1.9366860000009183,
+      "stateMs": 1.8307050000003073,
+      "effects": 7,
+      "flex": 65,
+      "smash": 65
+    },
+    {
+      "t": 51,
+      "fps": 60,
+      "worstFrameMs": 16.80000000000291,
+      "controlMs": 2.164295000002312,
+      "stateMs": 2.1178089999957592,
+      "effects": 1,
+      "flex": 65,
+      "smash": 65
+    },
+    {
+      "t": 52,
+      "fps": 60,
+      "worstFrameMs": 33.30000000000291,
+      "controlMs": 2.275949999995646,
+      "stateMs": 1.167422999998962,
+      "effects": 6,
+      "flex": 65,
+      "smash": 65
+    },
+    {
+      "t": 53,
+      "fps": 58.04230201672405,
+      "worstFrameMs": 33.30000000000291,
+      "controlMs": 3.595400000005611,
+      "stateMs": 1.3312520000035875,
+      "effects": 1,
+      "flex": 65,
+      "smash": 65
+    },
+    {
+      "t": 54,
+      "fps": 59,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 2.449330999996164,
+      "stateMs": 1.4933270000037737,
+      "effects": 7,
+      "flex": 70,
+      "smash": 70
+    },
+    {
+      "t": 55,
+      "fps": 59.02026362384427,
+      "worstFrameMs": 33.30000000000291,
+      "controlMs": 2.095536999993783,
+      "stateMs": 1.256178000003274,
+      "effects": 1,
+      "flex": 70,
+      "smash": 70
+    },
+    {
+      "t": 56,
+      "fps": 58,
+      "worstFrameMs": 33.30000000000291,
+      "controlMs": 2.047037000003911,
+      "stateMs": 1.3111950000020443,
+      "effects": 6,
+      "flex": 70,
+      "smash": 70
+    },
+    {
+      "t": 57,
+      "fps": 60,
+      "worstFrameMs": 33.30000000000291,
+      "controlMs": 2.5333470000041416,
+      "stateMs": 1.3890959999989718,
+      "effects": 1,
+      "flex": 70,
+      "smash": 70
+    },
+    {
+      "t": 58,
+      "fps": 59.026069847515984,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 2.032949999993434,
+      "stateMs": 1.3188049999953364,
+      "effects": 7,
+      "flex": 75,
+      "smash": 75
+    },
+    {
+      "t": 59,
+      "fps": 59,
+      "worstFrameMs": 33.400000000001455,
+      "controlMs": 1.9067030000005616,
+      "stateMs": 1.1764390000025742,
+      "effects": 1,
+      "flex": 75,
+      "smash": 75
+    },
+    {
+      "t": 60,
+      "fps": 58,
+      "worstFrameMs": 116.59999999999854,
+      "controlMs": 2.5898490000035963,
+      "stateMs": 2.216426999999385,
+      "effects": 7,
+      "flex": 0,
+      "smash": 0
+    }
+  ]
+}
