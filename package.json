@@ -19,8 +19,6 @@
     "assets": "node scripts/gen-placeholder-assets.mjs"
   },
   "dependencies": {
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0",
     "ws": "^8.22.0",
     "zod": "^4.6.5"
   },
@@ -31,6 +29,8 @@
     "@types/ws": "^8.18.2",
     "@vitejs/plugin-react": "^6.1.2",
     "playwright-core": "^1.63.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vite": "^8.3.3",

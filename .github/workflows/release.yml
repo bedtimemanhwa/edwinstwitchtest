@@ -1,0 +1,46 @@
+# Every push to main runs the checks, builds the ready-to-run HulksHangout.zip and publishes it as the
+# "latest" GitHub Release, so the download link in the README always points at the current main.
+name: Build download
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: true
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+      - run: sh scripts/package.sh
+      - name: Publish the "latest" release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete latest --cleanup-tag --yes || true
+          gh release create latest release/HulksHangout.zip \
+            --target "$GITHUB_SHA" --latest \
+            --title "Hulk's Hangout (latest)" \
+            --notes "Ready-to-run download built from main at ${GITHUB_SHA::7}.
+
+          1. Install Node.js 22 LTS from https://nodejs.org.
+          2. Download **HulksHangout.zip** below and extract it.
+          3. Double-click **start-windows.bat** (macOS/Linux: run \`./start.sh\`). The dashboard opens in your browser.
+          4. In OBS, add a Browser Source: \`http://localhost:3977/overlay\`, 1920x1080.
+
+          See README.md in the download for Twitch setup."

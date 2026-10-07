@@ -15,6 +15,17 @@ A chat-controlled Hulk companion that lives in a destructible room on your Twitc
 
 ![BRB scene](docs/screenshots/02-brb.png)
 
+## Download
+
+**[⬇ Download HulksHangout.zip](https://github.com/bedtimemanhwa/edwinstwitchtest/releases/latest/download/HulksHangout.zip)** (Windows, macOS and Linux)
+
+1. Install **Node.js 22 LTS** from https://nodejs.org (one time only).
+2. Extract the zip anywhere in your user folder, for example `Documents\HulksHangout`.
+3. Double-click **`start-windows.bat`** (on macOS/Linux, run `./start.sh`). The dashboard opens in your browser.
+4. Try it straight away at http://localhost:3977/demo, no Twitch needed. For OBS and Twitch, follow [Setup](#setup-windows) below.
+
+The zip is rebuilt automatically from `main` on every change, so this link is always the latest version. All releases are on the [Releases page](https://github.com/bedtimemanhwa/edwinstwitchtest/releases).
+
 ## Chat commands (all configurable in the dashboard)
 
 | Command | Effect | Cooldown per viewer |
@@ -47,14 +58,14 @@ Single celebrations last under 8 s and a gift batch's whole sequence under 12 s.
 ### 1. Install
 
 1. Install **Node.js 22 LTS** (22.13 or newer) from https://nodejs.org. Node 24 also works.
-2. Download this repository (Code → Download ZIP) and extract it, or `git clone` it.
-3. Open **PowerShell** in the folder and run:
-   ```
-   npm install
-   npm run build
-   ```
+2. **[Download HulksHangout.zip](https://github.com/bedtimemanhwa/edwinstwitchtest/releases/latest/download/HulksHangout.zip)** and extract it. It's already built, so there's nothing to install.
+3. Double-click **`start-windows.bat`**. A window opens with the server running, and the dashboard opens in your browser.
+   - **Keep that window open while you stream.** Closing it stops Hulk's Hangout.
+   - **Windows SmartScreen:** if Windows says it protected your PC, click **More info → Run anyway**. The file is a short script you can read in Notepad.
 
-You can try it now without Twitch: `npm start`, then open http://localhost:3977/demo.
+You can try it now without Twitch: open http://localhost:3977/demo.
+
+**From the source code instead:** Code → Download ZIP (or `git clone`) also works. `start-windows.bat` then runs `npm install` and `npm run build` for you the first time, which takes a minute or two.
 
 ### 2. Register the Twitch application
 
@@ -72,11 +83,14 @@ Copy `.env.example` to `.env` and fill in:
 TWITCH_CLIENT_ID=...
 TWITCH_CLIENT_SECRET=...
 ```
+- **On Windows:** open `.env.example` in Notepad, fill in the two values, then **File → Save As**, set *Save as type* to **All files** and name it `.env`. Otherwise Notepad saves it as `.env.txt`, which isn't read.
+- **Then restart:** close the server window and double-click `start-windows.bat` again.
+
 Never commit or share `.env` or the `data/` folder. Together they hold your client secret, your Twitch tokens and the dashboard key.
 
 ### 4. Sign in as the broadcaster
 
-1. Run `npm start`. Keep this window open for the whole stream.
+1. Double-click `start-windows.bat` (or run `npm start`). Keep this window open for the whole stream.
 2. Open http://localhost:3977/dashboard and click **Sign in with Twitch**. Sign in with the **broadcaster** account and approve.
 
 The app asks for these permissions:
@@ -110,7 +124,7 @@ The Twitch panel then shows **connected**, your account, and four event subscrip
 
 ### Pre-stream checklist
 
-1. Start the server with `npm start` and leave the window open.
+1. Start the server with `start-windows.bat` (or `npm start`) and leave the window open.
 2. Check the dashboard shows **server connected** and Twitch **connected**, with the subscriptions *enabled*. If the panel says *chat only*, that's expected on non-affiliate channels.
 3. Make sure the OBS browser source shows the overlay. Right-click it → *Refresh* if it doesn't.
 4. Press **Start session (intro)** in the dashboard and check the countdown.
@@ -142,6 +156,7 @@ The Twitch panel then shows **connected**, your account, and four event subscrip
 | `npm run test:smoke` | Headless-browser smoke test of the overlay and dashboard, and writes `docs/screenshots/`. It needs Chromium: set `CHROMIUM_PATH` or run `npx playwright install chromium`. |
 | `npm run test:load` | Runs 100 commands per second for 60 s against the demo session, with an overlay open, and writes `docs/load-test-results.json`. |
 | `npm run assets` | Regenerates the placeholder asset pack. |
+| `sh scripts/package.sh` | After `npm run build`: makes the ready-to-run `release/HulksHangout.zip`. The **Build download** workflow (`.github/workflows/release.yml`) runs the checks and this on every push to `main`, and publishes the zip as the `latest` release. |
 
 **Supported runtime:** Node.js **22.13+** (tested on 22.22) or Node 24. It uses Node's built-in SQLite (`node:sqlite`), so there's no native module to compile on Windows.
 - **The warning at startup:** Node 22 labels `node:sqlite` experimental. The npm scripts pass `--no-warnings=ExperimentalWarning` to hide that notice.
